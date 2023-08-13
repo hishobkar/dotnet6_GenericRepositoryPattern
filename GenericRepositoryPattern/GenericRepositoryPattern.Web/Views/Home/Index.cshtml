@@ -1,0 +1,14 @@
+﻿@model List<GenericRepositoryPattern.Data.Models.Product>
+
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+<table>
+@foreach(var item in Model)
+{
+    <tr>
+        <td>@item.Name</td>
+    </tr>
+}
+</table>
